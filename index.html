@@ -1,0 +1,249 @@
+<!DOCTYPE html5>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Academic Certificate Verification</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f5f9;
+            margin: 0;
+        }
+
+        header {
+            background-color: #173b66;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #244d78;
+            padding: 12px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 15px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            width: 85%;
+            margin: 25px auto;
+        }
+
+        section {
+            background-color: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+        }
+
+        h2 {
+            color: #173b66;
+        }
+
+        label {
+            display: block;
+            margin-top: 12px;
+        }
+
+        input, select {
+            width: 95%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid gray;
+            border-radius: 5px;
+        }
+
+        button {
+            background-color: #168567;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            margin-top: 15px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #105f4a;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border: 1px solid gray;
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #eaf2ff;
+            color: #173b66;
+        }
+
+        footer {
+            background-color: #173b66;
+            color: white;
+            text-align: center;
+            padding: 12px;
+        }
+
+        @media (max-width: 600px) {
+            main {
+                width: 95%;
+            }
+
+            nav a {
+                display: inline-block;
+                margin: 8px;
+            }
+
+            table {
+                font-size: 12px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Academic Verify</h1>
+        <p>Academic Certificate Verification Portal</p>
+    </header>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#verify">Verify Certificate</a>
+        <a href="#records">Records</a>
+        <a href="#about">About</a>
+    </nav>
+
+    <main>
+
+        <section id="home">
+            <h2>Welcome to Academic Verify</h2>
+
+            <p>
+                This portal helps organizations check whether
+                an academic certificate is genuine or not.
+                It provides a simple way to verify academic records.
+            </p>
+        </section>
+
+        <section id="verify">
+
+            <h2>Verify Your Certificate</h2>
+
+            <p>Enter your certificate details below.</p>
+
+            <form action="#records">
+
+                <label for="id">Certificate ID:</label>
+
+                <input type="text" id="id"
+                placeholder="Enter Certificate ID" required>
+
+                <label for="institution">Institution Name:</label>
+
+                <input type="text" id="institution"
+                placeholder="Enter Institution Name" required>
+
+                <label for="type">Certificate Type:</label>
+
+                <select id="type" required>
+                    <option value="">Select Certificate</option>
+                    <option>Bachelor's Certificate</option>
+                    <option>Diploma Certificate</option>
+                    <option>Training Certificate</option>
+                </select>
+
+                <button type="submit">Verify Certificate</button>
+
+            </form>
+
+            <p>
+                <small>Note: This is a demonstration website.
+                Real certificate verification is not connected yet.</small>
+            </p>
+
+        </section>
+
+        <section id="about">
+
+            <h2>About This Portal</h2>
+
+            <p>
+                The main purpose of this portal is to make
+                certificate verification easier and safer.
+            </p>
+
+            <ul>
+                <li>Check academic certificates.</li>
+                <li>Verify records through authorized institutions.</li>
+                <li>Reduce fake certificates.</li>
+                <li>Maintain digital academic records.</li>
+            </ul>
+
+        </section>
+
+        <section id="records">
+
+            <h2>Sample Certificate Records</h2>
+
+            <table>
+
+                <tr>
+                    <th>Certificate ID</th>
+                    <th>Certificate Name</th>
+                    <th>Institution</th>
+                    <th>Status</th>
+                </tr>
+
+                <tr>
+                    <td>RK4P26VWB37</td>
+                    <td>Bachelor's Degree</td>
+                    <td>ABC University</td>
+                    <td>Verified</td>
+                </tr>
+
+                <tr>
+                    <td>RK4P26VWB38</td>
+                    <td>Diploma Certificate</td>
+                    <td>XYZ College</td>
+                    <td>Verified</td>
+                </tr>
+
+                <tr>
+                    <td>RK4P26VWB39</td>
+                    <td>Training Certificate</td>
+                    <td>ABC Institute</td>
+                    <td>Pending</td>
+                </tr>
+
+            </table>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Academic Verify | HTML and CSS Project</p>
+    </footer>
+
+</body>
+</html>
